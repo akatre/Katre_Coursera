@@ -9,13 +9,13 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.h 
+ * @brief This header files has function declarations for all the functions used by stats.c 
  *
- * <Add Extended Description Here>
+ * Add Extended Description Here
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Aniruddha Katre
+ * @date July 7, 2017 
  *
  */
 #ifndef __STATS_H__
@@ -24,17 +24,95 @@
 /* Add Your Declarations and Function Comments here */ 
 
 /**
- * @brief <Add Brief Description of Function Here>
+ * @brief Print statistics for an array of data
  *
- * <Add Extended Description Here>
+ * This function takes inputs of minimum, maximum, meand and median values of the array and prints them in a formatted display
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
+ * @param unsigned char minVal minimum value of array to be printed
+ * @param unsigned char maxVal maximum value of array to be printed
+ * @param unsigned char meanVal average value of the array of data to be printed
+ * @param unsigned char medianVal median value of the array of data to be printed
  *
- * @return <Add Return Informaiton here>
+ * @return This function does not return any values
+ */
+void print_statistics(unsigned char minVal, unsigned char maxVal, unsigned char meanVal, unsigned char medianVal)
+
+/**
+ * @brief Print array of data
+ *
+ * This function prints the array of data in a formatted display
+ *
+ * @param unsigned char * ptr Pointer to the array of data
+ * @param char arrSize Size of the array of data
+ *
+ * @return This function does not return any value
  */
 
+void print_array(unsigned char * ptr, char arrSize)
+
+/**
+ * @brief This function finds the median value of the data
+ *
+ * This function takes a character pointer to the array of data as an input and finds the median value of the data
+ *
+ * @param unsigned char * ptr Pointer to the array of data
+ * @param char arrSize Size of the array of data
+ *
+ * @return This function returns the median value as a char
+ */
+
+unsigned char find_median(unsigned char * ptr, char arrSize)
+
+/**
+ * @brief This function finds the average value of a data set
+ *
+ * This function takes an char pointer to the data as an input and finds the mean of the data
+ *
+ * @param unsigned char * ptr Pointer to the array of data
+ * @param char arrSize Size of the array of data
+ *
+ * @return Returns a char variable containing the average value of the data
+ */
+
+unsigned char find_mean(unsigned char * ptr, char arrSize)
+
+/**
+ *@brief This function finds the maximum value of a data set
+ *
+ * This function takes an char pointer to the data as an input and finds the maximum of the data
+ *
+ * @param unsigned char * ptr Pointer to the array of data
+ * @param char arrSize Size of the array of data
+ *
+ * @return Returns a char variable containing the maximum value of the data
+ */
+
+unsigned char find_maximum(unsigned char * ptr, char arrSize)
+
+/**
+ * @brief This function finds the minimum value of a data set
+ *
+ * This function takes an char pointer to the data as an input and finds the minimum of the data
+ *
+ * @param unsigned char * ptr Pointer to the array of data
+ * @param char arrSize Size of the array of data
+ *
+ * @return Returns a char variable containing the minimum value of the data
+ */
+
+unsigned char find_minimum(unsigned char * ptr, char arrSize)
+
+/**
+ * @brief This function sorts the array of data
+ *
+ * This function takes an char pointer to the data and sorts it in descending order
+ *
+ * @param unsigned char * ptr Pointer to the array of data
+ * @param char arrSize Size of the array of data
+ *
+ * @return Does not return anything
+ */
+
+void sort_array(unsigned char * ptr, char arrSize)
 
 #endif /* __STATS_H__ */
